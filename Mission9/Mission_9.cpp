@@ -21,32 +21,65 @@ int main() {
 	qwerty			111
 	Miikka			9999999
 	Tee tulosten kysyminen ja tulostus omissa silmukoissaan. Älä siis kirjoita samanlaisia ohjelmarivejä 10
-	kertaa (ilkeä opettaja voi muuttaa tehtävänannon top-1000 -listaksi…).*/
+	kertaa (ilkeä opettaja voi muuttaa tehtävänannon top-1000 -listaksi…).
+
+
+	Muokkaa High Scores -ohjelmaa siten, että se hyödyntää funktioita. Ohjelmassa tulee olla kolme
+	funktiota:
+		// kysyy ja palauttaa pelaajan nimen
+	std::string kysy_nimi();
+		// kysyy ja palauttaa pelaajan pisteet
+	int kysy_pisteet();
+		// tulostaa pelaajan nimen ja pisteet
+	void tulosta(std::string nimi, int pisteet);
+	Organisoi ohjelma kolmeen lähdekooditiedostoon:
+·	pääohjelma (teht_010.cpp)
+·	funktioiden prototyypit (funktiot.h)
+·	funktioiden toteutus (funktiot.cpp)
+	*/
+
+	question = "Anna käyttäjätunnus : ";
+	question2 = "Anna Pistemäärä (int) : ";
+	high = "HIGH";
+	scores = "SCORES";
+	scored[SIZE];
+	players[SIZE];
 	
-	string question = "Anna käyttäjätunnus : ";
-	string question2 = "Anna Pistemäärä (int) : ";
-	string high = "HIGH";
-	string scores = "SCORES";
-	int score[10];
-	string player[10];
+	
 
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < SIZE; i++)
 	{
-		cout << question;
-		cin >> player[i];
-		cout << question2;
-		cin >> score[i];
+		players[i] = Ask_Name();
+		scored[i] = Ask_Score();
 	}
 
-	cout << high << "\t\t\t" << scores << endl;
-
-	for (int i = 0; i < 10; i++)
-	{
-
-		cout << player[i] << "\t\t\t" << score[i] << endl;
-
-	}
+	PrintScore(players, scored);
 
 	system("pause");
 	return 0;
 }
+
+	string Ask_Name() {
+		cout << question;
+		cin >> name;
+		return name;
+	}
+
+	int Ask_Score() {
+		cout << question2;
+		cin >> score;
+		return score;
+	}
+	
+	void PrintScore(string players[SIZE], int scored[SIZE]) {
+
+		
+		cout << high << "\t\t\t" << scores << endl;
+
+		for (int i = 0; i < SIZE; i++)
+		{
+
+			cout << players[i] << "\t\t\t" << scored[i] << endl;
+
+		}
+	}

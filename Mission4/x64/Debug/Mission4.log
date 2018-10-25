@@ -1,2 +1,3 @@
-﻿  Mission_4_5_6.cpp
-  Mission4.vcxproj -> C:\Users\vellu\Desktop\Koulujutut\C++ Opetus\Missions\Missions\x64\Debug\Mission4.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Mission4.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Mission_4_5_6.cpp
+  Mission4.vcxproj -> C:\Users\vellu\Desktop\Koulujutut\C++ Opetus\Missions\Missions\x64\Debug\Mission456.exe
