@@ -5,13 +5,14 @@ int main() {
 	/*Kirjoita funktio, joka palauttaa osoittimen parametrina annetun kokonaislukutaulukon suurimpaan
 	alkioon. Parametrina annetaan sekä osoitin taulukoon ensimmäiseen alkioon, että tieto siitä kuinka
 	monta alkioita taulukossa on.*/
-	
+	elements = 7;
+
 	for (int i = 0; i < elements; i++)
 	{
 		cout << table[i];
 	}
 
-	Find_Largest(table, elements);
+	table[elements] = *Find_Largest(&table[0], elements);
 
 	cout << endl;
 
@@ -25,9 +26,18 @@ int main() {
 	system("pause");
 	return 0;
 }
-int* Find_Largest(int* table, int elements) {
+int* Find_Largest(int* t, int elements) {
 
 	//Find Largest number and move it in to the biggest index of the table
+	for (int i = elements; i >= 0; i--)
+	{
+		if (t[elements] < t[i]) {
+			t[elements] = t[i];
+			
+		}
+	}
 	
-	return table;
+	
+
+	return &t[elements];
 }
