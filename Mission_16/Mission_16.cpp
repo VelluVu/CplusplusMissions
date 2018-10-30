@@ -12,7 +12,10 @@ int main() {
 		cout << table[i];
 	}
 
-	table[elements] = *Find_Largest(&table[0], elements);
+	t = table;
+	*t = *table;
+
+	table[elements] = *Find_Largest(t, elements);
 
 	cout << endl;
 
@@ -28,16 +31,18 @@ int main() {
 }
 int* Find_Largest(int* t, int elements) {
 
+	
 	//Find Largest number and move it in to the biggest index of the table
-	for (int i = elements; i >= 0; i--)
+	for (int i = 0; i < elements; i++)
 	{
-		if (t[elements] < t[i]) {
-			t[elements] = t[i];
-			
-		}
+		
+		if (t[i] > table[i]) {
+			t[elements] = table[i];
+			}
+				
+		t++;
 	}
 	
-	
 
-	return &t[elements];
+	return t;
 }
