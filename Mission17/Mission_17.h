@@ -7,7 +7,9 @@
 #include <stdio.h>
 using namespace std;
 
-int table[] = {2,3,15,5,6,3,2};
+int t[7] = {2,3,15,5,6,3,2};
 int elements = 7;
 
 void Order(int* table, int elements);
+int* Find_Largest(int* table, int elements);
+void SwapValues(int& x, int& y);

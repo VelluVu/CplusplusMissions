@@ -7,42 +7,29 @@ int main() {
 	monta alkioita taulukossa on.*/
 	elements = 7;
 
-	for (int i = 0; i < elements; i++)
-	{
-		cout << table[i];
-	}
-
-	t = table;
-	*t = *table;
-
-	table[elements] = *Find_Largest(t, elements);
-
-	cout << endl;
-
-	for (int i = 0; i < elements; i++)
-	{
-		cout << table[i];
-	}
-
-	cout << endl;
-
+	cout << "largest number : " << *Find_Largest(t, elements) << endl;
+	
 	system("pause");
 	return 0;
 }
-int* Find_Largest(int* t, int elements) {
+int* Find_Largest(int* table, int elements) {
 
-	
-	//Find Largest number and move it in to the biggest index of the table
-	for (int i = 0; i < elements; i++)
+	if (!elements)
+		return 0;
+
+	int* largest = &table[0];
+
+	//Find Largest number
+
+	for (int i = 1; i < elements; ++i)
 	{
 		
-		if (t[i] > table[i]) {
-			t[elements] = table[i];
+		if (table[i] > *largest) {
+			largest = &table[i];
 			}
 				
-		t++;
 	}
 	
 
-	return t;
+	return largest;
 }
