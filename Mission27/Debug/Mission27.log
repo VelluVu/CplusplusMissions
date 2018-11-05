@@ -1,0 +1,4 @@
+﻿  Mission_27.cpp
+c:\users\veli-matti\desktop\opetus\c++\mission27\mission_27.cpp(34): warning C4099: 'Solmu': type name first seen using 'class' now seen using 'struct'
+  c:\users\veli-matti\desktop\opetus\c++\mission27\mission_27.cpp(3): note: see declaration of 'Solmu'
+  Mission27.vcxproj -> C:\Users\Veli-Matti\Desktop\Opetus\C++\Debug\Mission27.exe

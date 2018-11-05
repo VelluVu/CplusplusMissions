@@ -8,11 +8,16 @@ public:
 	Solmu* next;
 };
 
-void tulosta_lista(const Solmu* alku);
-Solmu* lisaa_alkuu(Solmu* alku, int arvo);
+
+
 #include "Mission_26.h"
 
+void tulosta_lista(const Solmu* alku);
+Solmu* lisaa_alkuu(Solmu* alku, int arvo);
+
 int main() {
+
+	int arvo = 4;
 
 	Solmu* s4 = new Solmu;
 	s4->data = 1; s4->next = 0;
@@ -23,9 +28,9 @@ int main() {
 	Solmu* s1 = new Solmu;
 	s1->data = 3; s1->next = s2;
 	Solmu* head = s1;
-
-	int arvo = 4;
-	head = lisaa_alkuu(head, arvo);
+		
+	head= lisaa_alkuu(head, arvo);
+	
 	tulosta_lista(head);
 
 	delete(s4);
@@ -34,16 +39,36 @@ int main() {
 	delete(s1);
 	
 	delete(head);
-
+	
 	system("Pause");
+
 	return 0;
 }
 
-Solmu* lisaa_alkuu(Solmu* alku, int arvo) {	Solmu* s0 = new Solmu;	s0->data = arvo;	s0->next = alku->next;	alku->next = s0;	return s0;	delete(s0);}
 
-void tulosta_lista(const Solmu* alku) {	while (alku != nullptr) {
+Solmu* lisaa_alkuu(Solmu* alku, int arvo) {
+	
+	Solmu* temp = new Solmu;
 
-		cout << alku->data << endl;
+	temp->data = arvo;
+	temp->next = NULL;
+	if (alku != NULL) {
+		temp->next = alku;
+	}
+
+	alku = temp;
+	
+	return alku;
+}
+
+
+void tulosta_lista(const Solmu* alku) {
+
+	while (alku != nullptr) {
+
+		cout << alku->data << " ";
 		alku = alku->next;
 
-	}}
+	}
+	cout << endl;
+}
