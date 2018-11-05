@@ -10,6 +10,8 @@ public:
 
 void tulosta_lista(const Solmu* alku);
 
+#include "Mission_25.h"
+
 int main() {
 
 	Solmu* s4 = new Solmu;
@@ -24,14 +26,19 @@ int main() {
 
 	tulosta_lista(head);
 
+	delete(s4);
+	delete(s3);
+	delete(s2);
+	delete(s1);
+	delete(head);
+
 	system("Pause");
 	return 0;
 }
 
-
-void tulosta_lista(const Solmu* alku) {	for (int i = 0; i != 0; i++)
-	{
-		cout << alku->data;
+void tulosta_lista(const Solmu* alku) {	while (alku != nullptr) {
 		
-	}
-		cout << endl;}
+		cout << alku->data << endl;
+		alku = alku->next;
+		
+	}}
