@@ -59,6 +59,7 @@ Solmu* lisaa_alkuu(Solmu* alku, int arvo) {
 	alku = temp;
 	
 	return alku;
+	delete(temp);
 }
 
 

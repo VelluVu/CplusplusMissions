@@ -37,7 +37,7 @@ void tuhota_lista(Solmu* alku) {
 		temp = alku;
 		alku = alku->next;
 
-		free(temp);
+		delete(temp);
 	}
 	cout << "deleted list" << endl;
 }
