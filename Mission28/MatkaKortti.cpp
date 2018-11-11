@@ -1,21 +1,8 @@
 #include "MatkaKortti.h"
 
+MatkaKortti::MatkaKortti(){}
 
-
-MatkaKortti::MatkaKortti()
-{
-	
-	
-
-}
-
-
-MatkaKortti::~MatkaKortti()
-{
-
-
-
-}
+MatkaKortti::~MatkaKortti(){}
 
 void MatkaKortti::AlustaKortti() {
 
@@ -38,5 +25,29 @@ void MatkaKortti::LataaAikaa(int vuosi, int kk, int pv) {
 	_pv = pv;
 	_kk = kk;
 	_vuosi = vuosi;
+
+}
+
+float MatkaKortti::GetArvo() {
+
+	return _arvo;
+
+}
+
+int MatkaKortti::GetPv() {
+
+	return _pv;
+
+}
+
+int MatkaKortti::GetKk() {
+
+	return _kk;
+
+}
+
+int MatkaKortti::GetVuosi() {
+
+	return _vuosi;
 
 }

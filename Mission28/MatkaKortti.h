@@ -1,8 +1,6 @@
 #pragma once
 
-#include <string>
-#include <iostream>
-using namespace std;
+#include "Mission_28.h"
 
 class MatkaKortti
 {
@@ -21,6 +19,8 @@ public:
 	void AlustaKortti();
 	void LataaArvoa(float summa);
 	void LataaAikaa(int vuosi, int kk, int pv);
-
+	float GetArvo();
+	int GetPv();
+	int GetKk();
+	int GetVuosi();
 };
-
