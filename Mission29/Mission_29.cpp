@@ -4,11 +4,13 @@
 
 int main() {
 
-	MatkaKortti* mk;
-	KortinLataaja kl;
+	MatkaKortti*  mk = new MatkaKortti();
+	KortinLataaja* kl = new KortinLataaja();
 
 	kl->Lataa(mk);
 
+	delete(mk);
+	delete(kl);
 	system("Pause");
 	return 0;
 }

@@ -12,7 +12,7 @@ KortinLataaja::~KortinLataaja()
 
 void KortinLataaja::Lataa(MatkaKortti* mk) 
 {
-	mk.AlustaKortti();
+	mk->AlustaKortti();
 	float sum;
 	int pv;
 	int kk;
@@ -25,7 +25,7 @@ void KortinLataaja::Lataa(MatkaKortti* mk)
 	if (sum > 0)
 	{
 
-		mk.LataaArvoa(sum);
+		mk->LataaArvoa(sum);
 
 	}
 	else
@@ -78,11 +78,11 @@ void KortinLataaja::Lataa(MatkaKortti* mk)
 
 	if (pv >= 1 && pv <= 31 && kk >= 1 && kk <= 12 && v >= 2018) {
 
-		mk.LataaAikaa(v, kk, pv);
+		mk->LataaAikaa(v, kk, pv);
 
 	}
 
-	cout << "Arvoa on: " << mk.GetArvo() << endl;
-	cout << "Aikaa on: " << mk.GetPv() << "/" << mk.GetKk() << "/" << mk.GetVuosi() << endl;
+	cout << "Arvoa on: " << mk->GetArvo() << endl;
+	cout << "Aikaa on: " << mk->GetPv() << "/" << mk->GetKk() << "/" << mk->GetVuosi() << endl;
 
 }

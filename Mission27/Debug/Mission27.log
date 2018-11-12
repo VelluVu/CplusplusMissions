@@ -1,5 +1,1 @@
-﻿  Mission_27.cpp
-c:\users\vellu\desktop\koulujutut\c++ opetus\missions\mission27\mission_27.cpp(33): warning C4099: 'Solmu': type name first seen using 'class' now seen using 'struct'
-  c:\users\vellu\desktop\koulujutut\c++ opetus\missions\mission27\mission_27.cpp(3): note: see declaration of 'Solmu'
-  LINK : C:\Users\vellu\Desktop\Koulujutut\C++ Opetus\Missions\Debug\Mission27.exe not found or not built by the last incremental link; performing full link
-  Mission27.vcxproj -> C:\Users\vellu\Desktop\Koulujutut\C++ Opetus\Missions\Debug\Mission27.exe
+﻿  Mission27.vcxproj -> C:\Users\vellu\Desktop\Koulujutut\C++ Opetus\Missions\Debug\Mission27.exe

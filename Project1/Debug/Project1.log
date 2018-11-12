@@ -1,3 +1,4 @@
 ﻿  Mission_7.cpp
-c:\users\veli-matti\desktop\opetus\c++\project1\mission_7.cpp(25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Project1.vcxproj -> C:\Users\Veli-Matti\Desktop\Opetus\C++\Debug\Mission78.exe
+c:\users\vellu\desktop\koulujutut\c++ opetus\missions\project1\mission_7.cpp(25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  LINK : C:\Users\vellu\Desktop\Koulujutut\C++ Opetus\Missions\Debug\Mission78.exe not found or not built by the last incremental link; performing full link
+  Project1.vcxproj -> C:\Users\vellu\Desktop\Koulujutut\C++ Opetus\Missions\Debug\Mission78.exe
