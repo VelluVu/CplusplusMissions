@@ -3,12 +3,12 @@
 #include "Mission_30.h"
 #include "MatkaKortti.h"
 
-class KortinLataaja {
+class KortinLataaja 
+{
 
 public:
-
 	KortinLataaja();
 	~KortinLataaja();
-	void Lataa(MatkaKortti* k);
+	void Lataa(MatkaKortti* kortti);
 
 };

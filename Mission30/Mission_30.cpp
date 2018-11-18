@@ -3,17 +3,14 @@
 
 int main() {
 
-	MatkaKortti*  mk = new MatkaKortti();
-	KortinLataaja* kl = new KortinLataaja();
+	MatkaKortti*  mk;
+	KortinLataaja* kl;
+	Kortinlukija* lukija;
 
 	kl->Lataa(mk);
-
-	Kortinlukija* lukija = new Kortinlukija();
-
-	if (!lukija->TarkistaKelpoisuus()) 
-	{
-		lukija->OtaMaksu();
-	}
+	lukija->LueKortti(mk);
+	lukija->OtaMaksu();
+	
 	
 	delete(mk);
 	delete(kl);

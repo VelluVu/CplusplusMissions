@@ -14,13 +14,6 @@ private:
 public:
 
 	MatkaKortti();
-	MatkaKortti(const MatkaKortti& kortti) 
-	{
-		_arvo = kortti._arvo;
-		_pv = kortti._pv;
-		_kk = kortti._kk;
-		_vuosi = kortti._vuosi;
-	}
 	~MatkaKortti();
 	void AlustaKortti();
 	void LataaArvoa(float summa);

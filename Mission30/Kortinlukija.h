@@ -5,23 +5,21 @@
 #include <ctime>
 
 class Kortinlukija
-{
-	
+{	
 private:
-	
-	int pv;
-	int kk;
-	int v;
+
+	MatkaKortti* card;
+	int p;
+	int k;
+	int vu;
 	float arvo;
-	MatkaKortti* kortti;
 
 public:
-	
+
 	Kortinlukija();
 	~Kortinlukija();
-	void LueKortti(MatkaKortti* k);
+	void LueKortti(MatkaKortti* c);
 	bool TarkistaKelpoisuus();
 	void OtaMaksu();
 
 };
-

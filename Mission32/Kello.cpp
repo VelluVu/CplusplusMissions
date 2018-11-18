@@ -5,13 +5,10 @@
 Kello::Kello(int h, int m, int s)
 {
 
-	sekunnit = new Viisari();
-	minuutit = new Viisari();
-	tunnit = new Viisari();
-	sekunnit->SetArvo(s);
-	minuutit->SetArvo(m);
-	tunnit->SetArvo(h);
-
+	tunnit = new Viisari(h,24,0);
+	minuutit = new Viisari(m,60, tunnit);
+	sekunnit = new Viisari(s, 60, minuutit);
+		
 }
 
 
@@ -54,20 +51,6 @@ void Kello::nayta()
 void Kello::kay()
 {
 
-	if ((sekunnit->GetArvo() + 1) % 61) {
-		sekunnit->IncrementArvo(1);
-		if (sekunnit->GetArvo() == 60) {
-			minuutit->IncrementArvo(1);
-			sekunnit->SetArvo(0);
-			if (minuutit->GetArvo() == 60) {
-				tunnit->IncrementArvo(1);
-				minuutit->SetArvo(0);
-			}
-			if (tunnit->GetArvo() == 24) {
-				tunnit->SetArvo(0);
-			}
-		}
-
-	}
+	sekunnit->etene();
 }
 

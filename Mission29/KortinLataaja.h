@@ -5,9 +5,10 @@
 
 class KortinLataaja
 {
+
 public:
 	KortinLataaja();
 	~KortinLataaja();
 	void Lataa(MatkaKortti* kortti);
-};
 
+};

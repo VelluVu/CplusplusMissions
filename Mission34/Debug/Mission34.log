@@ -1,0 +1,25 @@
+﻿  Ajoneuvo.cpp
+c:\users\veli-matti\desktop\opetus\c++\mission34\autot.h(5): error C2504: 'Ajoneuvo': base class undefined
+c:\users\veli-matti\desktop\opetus\c++\mission34\laiva.h(5): error C2504: 'Ajoneuvo': base class undefined
+c:\users\veli-matti\desktop\opetus\c++\mission34\lentokone.h(5): error C2504: 'Ajoneuvo': base class undefined
+  Autot.cpp
+c:\users\veli-matti\desktop\opetus\c++\mission34\henkiloauto.h(5): error C2504: 'Autot': base class undefined
+c:\users\veli-matti\desktop\opetus\c++\mission34\kuormaauto.h(5): error C2504: 'Autot': base class undefined
+c:\users\veli-matti\desktop\opetus\c++\mission34\laiva.h(5): error C2504: 'Ajoneuvo': base class undefined
+c:\users\veli-matti\desktop\opetus\c++\mission34\lentokone.h(5): error C2504: 'Ajoneuvo': base class undefined
+  HenkiloAuto.cpp
+c:\users\veli-matti\desktop\opetus\c++\mission34\kuormaauto.h(5): error C2504: 'Autot': base class undefined
+c:\users\veli-matti\desktop\opetus\c++\mission34\laiva.h(5): error C2504: 'Ajoneuvo': base class undefined
+c:\users\veli-matti\desktop\opetus\c++\mission34\lentokone.h(5): error C2504: 'Ajoneuvo': base class undefined
+  KuormaAuto.cpp
+c:\users\veli-matti\desktop\opetus\c++\mission34\henkiloauto.h(5): error C2504: 'Autot': base class undefined
+c:\users\veli-matti\desktop\opetus\c++\mission34\laiva.h(5): error C2504: 'Ajoneuvo': base class undefined
+c:\users\veli-matti\desktop\opetus\c++\mission34\lentokone.h(5): error C2504: 'Ajoneuvo': base class undefined
+  Laiva.cpp
+c:\users\veli-matti\desktop\opetus\c++\mission34\autot.h(5): error C2504: 'Ajoneuvo': base class undefined
+c:\users\veli-matti\desktop\opetus\c++\mission34\lentokone.h(5): error C2504: 'Ajoneuvo': base class undefined
+  LentoKone.cpp
+c:\users\veli-matti\desktop\opetus\c++\mission34\autot.h(5): error C2504: 'Ajoneuvo': base class undefined
+c:\users\veli-matti\desktop\opetus\c++\mission34\laiva.h(5): error C2504: 'Ajoneuvo': base class undefined
+  Mission_34.cpp
+  Generating Code...

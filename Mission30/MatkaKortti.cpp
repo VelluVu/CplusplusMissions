@@ -1,15 +1,13 @@
 #include "MatkaKortti.h"
 
-
-
 MatkaKortti::MatkaKortti()
 {
-	
+	AlustaKortti();
 }
-
 
 MatkaKortti::~MatkaKortti()
 {
+
 }
 
 void MatkaKortti::AlustaKortti() {

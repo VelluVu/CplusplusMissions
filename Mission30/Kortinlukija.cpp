@@ -1,36 +1,32 @@
 #include "Kortinlukija.h"
-#pragma warning(disable : 4996)
 
 Kortinlukija::Kortinlukija()
 {
-
-	kortti = new MatkaKortti();
-
+	
 }
 
 Kortinlukija::~Kortinlukija()
 {
-
-	delete(kortti);
-
+	
 }
 
-void Kortinlukija::LueKortti(MatkaKortti* k)
+void Kortinlukija::LueKortti(MatkaKortti* c)
 {
 
-	kortti = k;
+	card = c;
 
 }
 
 bool Kortinlukija::TarkistaKelpoisuus()
 {
 	
-	time_t t = time(NULL);
-	tm* timePtr = localtime(&t);
+	p = 14;
+	k = 11;
+	vu = 2018;
 
-	cout << pv << "/" << kk << "/" << v << endl;
+	cout << p << "/" << k << "/" << vu << endl;
 	
-	if (kortti->GetPv() >= (timePtr->tm_mday) && kortti->GetVuosi() >= (timePtr->tm_mon) && v >= (timePtr->tm_year) + 1900) {
+	if (card->GetPv() >= p && card->GetKk() >= k && card->GetVuosi() >= vu) {
 
 		cout << "Kortissa on aikaa. " << endl;
 
@@ -50,7 +46,13 @@ bool Kortinlukija::TarkistaKelpoisuus()
 
 void Kortinlukija::OtaMaksu() 
 {
-	
+
+	if (!TarkistaKelpoisuus) 
+	{
+		cout << "bad card..." << endl;
+		return;
+	}
+
 	cout << "0 = vaihdoton raitiovaunumatka, " << endl;
 	cout << "1 = kaupungin sisäinen matka, " << endl;
 	cout << "2 = seutumatka tai vyöhykelisä. " << endl;
@@ -62,9 +64,9 @@ void Kortinlukija::OtaMaksu()
 	case 0:
 
 		cout << "ratikka... -2.8€" << endl;
-		kortti->SetArvo(-3);
+		card->SetArvo(-3);
 
-		if (kortti->GetArvo() <= 0) {
+		if (card->GetArvo() <= 0) {
 			cout << "Eihä sulla oo rahaa..." << endl;
 		}
 
@@ -73,9 +75,9 @@ void Kortinlukija::OtaMaksu()
 	case 1:
 
 		cout << "sisäinen... -3.5€" << endl;
-		kortti->SetArvo(-3.5);
+		card->SetArvo(-3.5);
 
-		if (kortti->GetArvo() <= 0) {
+		if (card->GetArvo() <= 0) {
 			cout << "Eihä sulla oo rahaa..." << endl;
 		}
 
@@ -84,9 +86,9 @@ void Kortinlukija::OtaMaksu()
 	case 2:
 
 		cout << "seutu... nyt meni massit -100€" << endl;
-		kortti->SetArvo(-100);
+		card->SetArvo(-100);
 
-		if (kortti->GetArvo() <= 0) {
+		if (card->GetArvo() <= 0) {
 			cout << "Eihä sulla oo rahaa..." << endl;
 		}
 

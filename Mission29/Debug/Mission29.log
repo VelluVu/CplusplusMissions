@@ -1,2 +1,6 @@
-﻿  Mission_29.cpp
-  Mission29.vcxproj -> C:\Users\vellu\Desktop\Koulujutut\C++ Opetus\Missions\Debug\Mission29.exe
+﻿  KortinLataaja.cpp
+  MatkaKortti.cpp
+  Mission_29.cpp
+  Generating Code...
+  LINK : C:\Users\Veli-Matti\Desktop\Opetus\C++\Debug\Mission29.exe not found or not built by the last incremental link; performing full link
+  Mission29.vcxproj -> C:\Users\Veli-Matti\Desktop\Opetus\C++\Debug\Mission29.exe
