@@ -1,19 +1,12 @@
 #include "Mission_34.h"
 
 int main() {
+	
+	KuormaAuto kuormaAuto(80,1920,5000,2,6,1500);
+	HenkiloAuto henkiloAuto(120, 2000, 600, 4, 4, 6);
+	Laiva laiva(60, 1940, 20000, 100);
+	LentoKone lentsikka(500, 2000, 800, 1500);
 
-	Ajoneuvo* ajoneuvo = 0;
-	Ajoneuvo* ajoPeli = 0;
-	Ajoneuvo* autoja1 = 0;
-	Ajoneuvo* autoja2 = 0;
-	autoja1 =  new Autot(4, 4);
-	autoja2 = new Autot(2, 2);
-	autoja1 = new HenkiloAuto(6);
-	autoja2 = new KuormaAuto(1500);
-	ajoPeli = new Laiva(10);
-	ajoneuvo = new LentoKone(1000);
-
-
-
+	system("Pause");
 	return 0;
 }

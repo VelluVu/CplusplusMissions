@@ -18,45 +18,9 @@
     <ClInclude Include="Mission_34.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Ajoneuvo.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Autot.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HenkiloAuto.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="KuormaAuto.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LentoKone.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Laiva.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Mission_34.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Ajoneuvo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Autot.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="HenkiloAuto.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="KuormaAuto.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LentoKone.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Laiva.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

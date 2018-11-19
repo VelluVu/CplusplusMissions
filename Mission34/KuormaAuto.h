@@ -1,14 +1,5 @@
 #pragma once
 #include "Autot.h"
-class KuormaAuto :
-	public Autot
-{
+#include "Ajoneuvo.h"
 
-private:
-	int _loadMaxWeight;
-
-public:
-	KuormaAuto(int loadMaxWeight);
-	~KuormaAuto();
-};
 

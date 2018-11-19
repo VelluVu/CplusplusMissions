@@ -2,9 +2,7 @@
 
 
 
-HenkiloAuto::HenkiloAuto(int matkustajatMax) : Autot(_oviLkm,_rengasLkm), _matkustajatMax(matkustajatMax)
-{
-}
+HenkiloAuto::
 
 
 HenkiloAuto::~HenkiloAuto()

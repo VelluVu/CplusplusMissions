@@ -115,21 +115,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Ajoneuvo.h" />
-    <ClInclude Include="Autot.h" />
-    <ClInclude Include="HenkiloAuto.h" />
-    <ClInclude Include="KuormaAuto.h" />
-    <ClInclude Include="Laiva.h" />
-    <ClInclude Include="LentoKone.h" />
     <ClInclude Include="Mission_34.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Ajoneuvo.cpp" />
-    <ClCompile Include="Autot.cpp" />
-    <ClCompile Include="HenkiloAuto.cpp" />
-    <ClCompile Include="KuormaAuto.cpp" />
-    <ClCompile Include="Laiva.cpp" />
-    <ClCompile Include="LentoKone.cpp" />
     <ClCompile Include="Mission_34.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

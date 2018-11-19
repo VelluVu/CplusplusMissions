@@ -1,13 +1,6 @@
 #pragma once
 #include "Autot.h"
-class HenkiloAuto :
-	public Autot
-{
-private:
-	int _matkustajatMax;
+#include "Ajoneuvo.h"
 
-public:
-	HenkiloAuto(int matkustajatMax);
-	~HenkiloAuto();
-};
+
 

@@ -2,9 +2,7 @@
 
 
 
-KuormaAuto::KuormaAuto(int loadMaxWeight) : Autot(_oviLkm,_rengasLkm), _loadMaxWeight(loadMaxWeight)
-{
-}
+
 
 
 KuormaAuto::~KuormaAuto()
