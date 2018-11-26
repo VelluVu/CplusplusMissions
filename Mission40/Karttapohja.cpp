@@ -1,8 +1,8 @@
 #include "Karttapohja.h"
+#include <iostream>
 
 
-
-Karttapohja::Karttapohja(Maastoruutu& maastoRuutu, int width, int height)
+Karttapohja::Karttapohja(Maastoruutu* maastoRuutu, int width, int height)
 {
 	
 	_width = width;
@@ -12,9 +12,10 @@ Karttapohja::Karttapohja(Maastoruutu& maastoRuutu, int width, int height)
 	{
 		for (int y = 0; y < _height; y++)
 		{
-			_maastoRuutu = &maastoRuutu;
+			_maastoRuutu = maastoRuutu;
 		}
 	}
+	
 
 }
 

@@ -1,7 +1,11 @@
 #pragma once
-#include "Maastotyyppi.h"
-#include "Vihollinen.h"
-#include "Objekti.h"
+#include <vector>
+
+// "forward declaration"
+class Pelaaja;
+class Objekti;
+class Vihollinen;
+class Maastotyyppi;
 
 class Maastoruutu
 {
@@ -9,11 +13,19 @@ class Maastoruutu
 public:
 	int x;
 	int y;
-	Maastotyyppi* maastoTyyppi;
-	Vihollinen* viholliset;
-	Objekti* objektit;
+	Maastotyyppi* _maastoTyyppi;
+	Pelaaja* _pelaaja;
+	std::vector<Vihollinen*> _viholliset;
+	std::vector<Objekti*> _objektit;
+	
 	Maastoruutu();
+	Maastoruutu(Maastotyyppi* maastotyyppi);
+	Maastoruutu(Maastotyyppi* maastotyyppi, Objekti* objektit, int objektitlkm);
+	Maastoruutu(Maastotyyppi* maastotyyppi, Vihollinen* viholliset, int vihollisetlkm);
+	Maastoruutu(Maastotyyppi* maastotyyppi, Vihollinen* viholliset, int vihollisetlkm, Objekti* objektit, int objektitlkm);
+	Maastoruutu(Maastotyyppi* maastotyyppi, Vihollinen* viholliset, int vihollisetlkm, Objekti* objektit, int objektitlkm, Pelaaja* pelaaja);
 	~Maastoruutu();
 	
+	void MaastotyyppiPiirra();
 };
 

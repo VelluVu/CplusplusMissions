@@ -1,6 +1,9 @@
 #pragma once
+#include <iostream>
+
 class Maastotyyppi
 {
+
 protected:
 
 	float _taisteluVaikeusKerroin;
@@ -8,6 +11,7 @@ protected:
 
 public:
 
+	virtual void Piirra() = 0;
 	Maastotyyppi(float taisteluVaikeusKerroin, float liikkumisVaikeusKerroin) {
 		_taisteluVaikeusKerroin = taisteluVaikeusKerroin;
 		_liikkumisVaikeusKerroin = liikkumisVaikeusKerroin;
@@ -28,7 +32,10 @@ class Suo : public Maastotyyppi {
 	~Suo() {
 		delete(this);
 	}
-
+	void Piirra() {
+		std::cout << "S";
+	}
+	
 };
 
 class Metsa : public Maastotyyppi {
@@ -42,7 +49,10 @@ class Metsa : public Maastotyyppi {
 	~Metsa() {
 		delete(this);
 	}
-
+	void Piirra() {
+		std::cout << "M";
+	}
+	
 };
 
 class Vesi : public Maastotyyppi {
@@ -56,6 +66,10 @@ class Vesi : public Maastotyyppi {
 	~Vesi() {
 		delete(this);
 	}
+	void Piirra() {
+		std::cout << "V";
+	}
+
 };
 
 class Heinikko : public Maastotyyppi {
@@ -69,6 +83,10 @@ class Heinikko : public Maastotyyppi {
 	~Heinikko() {
 		delete(this);
 	}
+	void Piirra() {
+		std::cout << "H";
+	}
+	
 };
 
 class Tie : public Maastotyyppi {
@@ -81,6 +99,9 @@ class Tie : public Maastotyyppi {
 	}
 	~Tie() {
 		delete(this);
+	}
+	void Piirra() {
+		std::cout << "T";
 	}
 
 };
@@ -95,6 +116,9 @@ class Vuoristo : public Maastotyyppi {
 	}
 	~Vuoristo() {
 		delete(this);
+	}
+	void Piirra() {
+		std::cout << "v";
 	}
 
 };

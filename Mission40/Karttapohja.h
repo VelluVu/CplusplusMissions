@@ -1,5 +1,6 @@
 #pragma once
-#include "Maastoruutu.h"
+
+class Maastoruutu;
 
 class Karttapohja
 {
@@ -9,7 +10,7 @@ private:
 	int _height;
 
 public:
-	Karttapohja(Maastoruutu&, int, int);
+	Karttapohja(Maastoruutu*, int, int);
 	~Karttapohja();
 };
 
