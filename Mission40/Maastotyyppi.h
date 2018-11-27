@@ -5,29 +5,29 @@ class Maastotyyppi
 {
 
 protected:
-
+	char _merkki;
 	float _taisteluVaikeusKerroin;
 	float _liikkumisVaikeusKerroin;
 
 public:
 
-	virtual void Piirra() = 0;
-	Maastotyyppi(float taisteluVaikeusKerroin, float liikkumisVaikeusKerroin) {
+	//virtual void Piirra() = 0;
+	Maastotyyppi(char merkki, float taisteluVaikeusKerroin, float liikkumisVaikeusKerroin) {
+		_merkki = merkki;
 		_taisteluVaikeusKerroin = taisteluVaikeusKerroin;
 		_liikkumisVaikeusKerroin = liikkumisVaikeusKerroin;
 	}
 	~Maastotyyppi() {
 		delete(this);
 	}
+	void EtuMerkki() {
+		std::cout << _merkki;
+	}
 };
 
-class Suo : public Maastotyyppi {
+/*class Suo : public Maastotyyppi {
 
-	float tv;
-	float lv;
-	Suo() : Maastotyyppi(tv, lv) {
-		tv = 2;
-		lv = 2;
+	Suo(float tv, float lv) : Maastotyyppi(tv, lv) {
 	}
 	~Suo() {
 		delete(this);
@@ -40,11 +40,7 @@ class Suo : public Maastotyyppi {
 
 class Metsa : public Maastotyyppi {
 
-	float tv;
-	float lv;
-	Metsa() : Maastotyyppi(tv, lv) {
-		tv = 1.4;
-		lv = 1.6;
+	Metsa(float tv, float lv) : Maastotyyppi(tv, lv) {
 	}
 	~Metsa() {
 		delete(this);
@@ -57,11 +53,8 @@ class Metsa : public Maastotyyppi {
 
 class Vesi : public Maastotyyppi {
 
-	float tv;
-	float lv;
-	Vesi() : Maastotyyppi(tv, lv) {
-		tv = 5;
-		lv = 5;
+	Vesi(float tv, float lv) : Maastotyyppi(tv, lv) {
+	
 	}
 	~Vesi() {
 		delete(this);
@@ -74,11 +67,7 @@ class Vesi : public Maastotyyppi {
 
 class Heinikko : public Maastotyyppi {
 
-	float tv;
-	float lv;
-	Heinikko() : Maastotyyppi(tv, lv) {
-		tv = 1;
-		lv = 1;
+	Heinikko(float tv, float lv) : Maastotyyppi(tv, lv) {
 	}
 	~Heinikko() {
 		delete(this);
@@ -91,11 +80,7 @@ class Heinikko : public Maastotyyppi {
 
 class Tie : public Maastotyyppi {
 
-	float tv;
-	float lv;
-	Tie() : Maastotyyppi(tv, lv) {
-		tv = 0.8;
-		lv = 0.8;
+	Tie(float tv, float lv) : Maastotyyppi(tv, lv) {
 	}
 	~Tie() {
 		delete(this);
@@ -108,11 +93,7 @@ class Tie : public Maastotyyppi {
 
 class Vuoristo : public Maastotyyppi {
 
-	float tv;
-	float lv;
-	Vuoristo() : Maastotyyppi(tv, lv) {
-		tv = 3;
-		lv = 3;
+	Vuoristo(float tv, float lv) : Maastotyyppi(tv, lv) {
 	}
 	~Vuoristo() {
 		delete(this);
@@ -121,4 +102,4 @@ class Vuoristo : public Maastotyyppi {
 		std::cout << "v";
 	}
 
-};
+};*/

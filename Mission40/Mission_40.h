@@ -1,12 +1,11 @@
 #pragma once
 #include <iostream>
 #include <string>
-
-class Karttapohja;
-class Maastoruutu;
-class Maastotyyppi;
-class Objekti;
-class Pelaaja;
-class Vihollinen;
+#include "Maastotyyppi.h"
+#include "Pelaaja.h"
+#include "Vihollinen.h"
+#include "Karttapohja.h"
+#include "Objekti.h"
+#include "Maastoruutu.h"
 
 using namespace std;

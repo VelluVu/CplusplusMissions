@@ -5,18 +5,24 @@ using namespace std;
 
 class Vihollinen
 {
-public:
+
+private:
+
 	string _nimi;
-	int _hyokkaysPisteet;
+	int _hyokkaysPisteet;	
+
+public:
+	
+	Vihollinen(string nimi, int hyokkausPisteet, int puolustusPisteet, int kuntoPisteet);
+	~Vihollinen();
 	int _puolustusPisteet;
 	int _kuntoPisteet;
 	void Die();
-	void DealDamage(Pelaaja&);
-	Vihollinen(string nimi, int hyokkausPisteet, int puolustusPisteet, int kuntoPisteet);
-	~Vihollinen();
+	void DealDamage(Pelaaja* p);
+	
 };
 
-class Orc : public Vihollinen {
+/*class Orc : public Vihollinen {
 
 	Orc(string nimi,int hyokkaysPisteet, int puolustusPisteet, int kuntoPisteet) : Vihollinen(nimi, hyokkaysPisteet, puolustusPisteet, kuntoPisteet) {
 
@@ -36,5 +42,5 @@ class MyrkkyHamis : public Vihollinen {
 		delete(this);
 	}
 
-};
+};*/
 

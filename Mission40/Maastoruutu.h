@@ -9,23 +9,24 @@ class Maastotyyppi;
 
 class Maastoruutu
 {
-	
-public:
+private:
 	int x;
 	int y;
-	Maastotyyppi* _maastoTyyppi;
-	Pelaaja* _pelaaja;
+	Maastotyyppi* _maastoTyyppi = nullptr;
+	Pelaaja* _pelaaja = nullptr;
 	std::vector<Vihollinen*> _viholliset;
 	std::vector<Objekti*> _objektit;
+
+public:
+	
 	
 	Maastoruutu();
 	Maastoruutu(Maastotyyppi* maastotyyppi);
+	Maastoruutu(Maastotyyppi* maastotyyppi, Pelaaja* pelaaja);
 	Maastoruutu(Maastotyyppi* maastotyyppi, Objekti* objektit, int objektitlkm);
 	Maastoruutu(Maastotyyppi* maastotyyppi, Vihollinen* viholliset, int vihollisetlkm);
 	Maastoruutu(Maastotyyppi* maastotyyppi, Vihollinen* viholliset, int vihollisetlkm, Objekti* objektit, int objektitlkm);
 	Maastoruutu(Maastotyyppi* maastotyyppi, Vihollinen* viholliset, int vihollisetlkm, Objekti* objektit, int objektitlkm, Pelaaja* pelaaja);
 	~Maastoruutu();
-	
-	void MaastotyyppiPiirra();
 };
 

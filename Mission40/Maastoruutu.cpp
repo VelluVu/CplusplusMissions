@@ -6,12 +6,18 @@ Maastoruutu::Maastoruutu()
 {
 }
 
-Maastoruutu::Maastoruutu(Maastotyyppi * maastotyyppi)
+Maastoruutu::Maastoruutu(Maastotyyppi* maastotyyppi)
 {
 	_maastoTyyppi = maastotyyppi;
 }
 
-Maastoruutu::Maastoruutu(Maastotyyppi * maastotyyppi, Objekti * objektit, int objektitlkm)
+Maastoruutu::Maastoruutu(Maastotyyppi * maastotyyppi, Pelaaja * pelaaja)
+{
+	_maastoTyyppi = maastotyyppi;
+	_pelaaja = pelaaja;
+}
+
+Maastoruutu::Maastoruutu(Maastotyyppi* maastotyyppi, Objekti * objektit, int objektitlkm)
 {
 	_maastoTyyppi = maastotyyppi;
 
@@ -21,7 +27,7 @@ Maastoruutu::Maastoruutu(Maastotyyppi * maastotyyppi, Objekti * objektit, int ob
 	}
 }
 
-Maastoruutu::Maastoruutu(Maastotyyppi * maastotyyppi, Vihollinen * viholliset, int vihollisetlkm)
+Maastoruutu::Maastoruutu(Maastotyyppi* maastotyyppi, Vihollinen * viholliset, int vihollisetlkm)
 {
 	_maastoTyyppi = maastotyyppi;
 
@@ -33,7 +39,7 @@ Maastoruutu::Maastoruutu(Maastotyyppi * maastotyyppi, Vihollinen * viholliset, i
 }
 
 
-Maastoruutu::Maastoruutu(Maastotyyppi * maastotyyppi, Vihollinen * viholliset, int vihollisetlkm, Objekti * objektit, int objektitlkm)
+Maastoruutu::Maastoruutu(Maastotyyppi* maastotyyppi, Vihollinen * viholliset, int vihollisetlkm, Objekti * objektit, int objektitlkm)
 {
 	_maastoTyyppi = maastotyyppi;
 
@@ -48,7 +54,7 @@ Maastoruutu::Maastoruutu(Maastotyyppi * maastotyyppi, Vihollinen * viholliset, i
 	
 }
 
-Maastoruutu::Maastoruutu(Maastotyyppi * maastotyyppi, Vihollinen * viholliset, int vihollisetlkm, Objekti * objektit, int objektitlkm, Pelaaja * pelaaja)
+Maastoruutu::Maastoruutu(Maastotyyppi* maastotyyppi, Vihollinen * viholliset, int vihollisetlkm, Objekti * objektit, int objektitlkm, Pelaaja * pelaaja)
 {
 	_maastoTyyppi = maastotyyppi;
 	_pelaaja = pelaaja;
@@ -67,3 +73,4 @@ Maastoruutu::Maastoruutu(Maastotyyppi * maastotyyppi, Vihollinen * viholliset, i
 Maastoruutu::~Maastoruutu()
 {
 }
+

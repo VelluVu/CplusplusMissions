@@ -1,22 +1,30 @@
 #pragma once
 #include <string>
 #include "Vihollinen.h"
+#include "Objekti.h"
 using namespace std;
 
 class Pelaaja
 {
-public:
+
+private:
+
 	string _nimi;
 	int _level;
-	int _kuntoPisteet;
 	int _kuntoPisteetMax;
 	int _varallisuus;
 	int _hyokkaysVoima;
-	int _puolustusVoima;
-	void KasvataHP(int);
-	void DealDamage(Vihollinen&);
-	void Die();
+	Objekti* kamat;
+
+public:
+
 	Pelaaja(string, int, int, int, int, int, int);
 	~Pelaaja();
+	int _puolustusPisteet;
+	int _kuntoPisteet;
+	void KasvataHP(int);
+	void DealDamage(Vihollinen* vihu);
+	void Die();
+	void SetKama(Objekti* objekti);
 };
 

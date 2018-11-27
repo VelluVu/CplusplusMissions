@@ -4,7 +4,7 @@ using namespace std;
 
 class Objekti
 {
-public:
+protected:
 	string _nimi;
 	Objekti(string nimi) {
 		_nimi = nimi;

@@ -9,10 +9,10 @@ void Vihollinen::Die()
 	}
 }
 
-void Vihollinen::DealDamage(Pelaaja &pelaaja)
+void Vihollinen::DealDamage(Pelaaja* p)
 {
-	pelaaja._kuntoPisteet -= _hyokkaysPisteet;
-	pelaaja.Die();
+	p->_kuntoPisteet -= (_hyokkaysPisteet - p->_puolustusPisteet);
+	p->Die();
 }
 
 Vihollinen::Vihollinen(string nimi, int hyokkausPisteet, int puolustusPisteet, int kuntoPisteet)

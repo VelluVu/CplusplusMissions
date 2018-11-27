@@ -9,11 +9,11 @@ void Pelaaja::KasvataHP(int increase)
 
 }
 
-void Pelaaja::DealDamage(Vihollinen &vihollinen)
+void Pelaaja::DealDamage(Vihollinen* vihu)
 {
 
-	vihollinen._kuntoPisteet -= (vihollinen._puolustusPisteet - _hyokkaysVoima);
-	vihollinen.Die();
+	vihu->_kuntoPisteet -= (_hyokkaysVoima - vihu->_puolustusPisteet);
+	vihu->Die();
 	
 }
 
@@ -34,7 +34,7 @@ Pelaaja::Pelaaja(string nimi,int level, int kuntoPisteet, int kuntoPisteetMax, i
 	_kuntoPisteetMax = kuntoPisteet;
 	_varallisuus = varallisuus;
 	_hyokkaysVoima = hyokkaysVoima;
-	_puolustusVoima = puolustusVoima;
+	_puolustusPisteet = puolustusVoima;
 
 }
 
@@ -44,4 +44,10 @@ Pelaaja::~Pelaaja()
 	
 	delete(this);
 
+}
+
+void Pelaaja::SetKama(Objekti* objekti)
+{
+	//varusteiden vaihto ja jne... saa lisätä
+	kamat = objekti;
 }
